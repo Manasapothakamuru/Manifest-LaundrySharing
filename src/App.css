@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px; /* Adjust based on your design */
+  margin: 0 auto; /* Center align content */
+  padding: 20px;
+}
+
+/* Media query for iPhone 13 */
+@media only screen 
+  and (device-width : 390px) 
+  and (device-height : 844px) 
+  and (-webkit-device-pixel-ratio : 3) {
+    .container {
+      max-width: 390px; 
+    }
+}
+
+/* Media query for iPhone 14-72 */
+@media only screen 
+  and (device-width : 2778px) 
+  and (device-height : 1284px) 
+  and (-webkit-device-pixel-ratio : 3) {
+    .container {
+      max-width: 2778px; 
+    }
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  background-color: #160449;
+  color: #F6EEE3;
+}
+.header--title {
+  font-family: 'Playfair Display', serif; 
+  font-size: 36px;
+  margin-top: 10px;
+  margin-left: 10px; 
+  margin-bottom: 3px; 
+  font-weight:bold;
+}
+
+.header--sub {
+  font-family: 'Source Sans Pro', sans-serif; 
+  font-size: 10px; 
+  margin-top: 3px; 
+  font-weight: lighter;
+}
