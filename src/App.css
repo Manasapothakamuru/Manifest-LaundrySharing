@@ -7,49 +7,115 @@ body {
 
 .container {
   width: 100%;
-  max-width: 600px; /* Adjust based on your design */
+  max-width: 390px; /* Based on your design for iPhone 13 */
   margin: 0 auto; /* Center align content */
   padding: 20px;
 }
 
-/* Media query for iPhone 13 */
-@media only screen 
-  and (device-width : 390px) 
-  and (device-height : 844px) 
-  and (-webkit-device-pixel-ratio : 3) {
-    .container {
-      max-width: 390px; 
-    }
-}
-
-/* Media query for iPhone 14-72 */
-@media only screen 
-  and (device-width : 2778px) 
-  and (device-height : 1284px) 
-  and (-webkit-device-pixel-ratio : 3) {
-    .container {
-      max-width: 2778px; 
-    }
-}
-
-.header{
+.header {
   display: flex;
   justify-content: center;
   background-color: #160449;
   color: #F6EEE3;
+  padding: 10px 0; /* Add padding for better spacing */
 }
+
 .header--title {
-  font-family: 'Playfair Display', serif; 
+  font-family: 'Playfair Display', serif;
   font-size: 36px;
   margin-top: 10px;
-  margin-left: 10px; 
-  margin-bottom: 3px; 
-  font-weight:bold;
+  margin-left: 10px;
+  margin-bottom: 3px;
+  font-weight: bold;
 }
 
 .header--sub {
-  font-family: 'Source Sans Pro', sans-serif; 
-  font-size: 10px; 
-  margin-top: 3px; 
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 10px;
+  margin-top: 3px;
   font-weight: lighter;
+}
+
+.hero--content {
+  background-color: #F2F2F2;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin-left: 0px;
+  margin-right: 30px;
+}
+
+.hero--title {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #160449;
+  margin-bottom: 20px;
+}
+
+.bookings--info {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.booking-btn, .available--btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #160449;
+  color: white;
+  cursor: pointer;
+}
+
+.booking-btn {
+  background-color: #160449
+}
+
+.available--btn {
+  background-color: #0060B1;
+}
+
+.hero--sub {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  color: #A52A2A;
+  margin-bottom: 20px;
+}
+
+.washers--info, .dryers--info {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  color: #160449;
+  background-color: #79CBF9;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.washers--btn, .dryers--btn {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.washers--btn {
+  background-color: #76B148;
+}
+
+.dryers--btn {
+  background-color: #A52A2A;
+}
+
+.dryers--info {
+  background-color: #A8E6CF;
 }
