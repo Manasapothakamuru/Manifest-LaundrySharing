@@ -6,7 +6,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import DaySelection from "./DaySelection"
 import AvailableButton from "./AvailableButton";
-import {DryerIcon} from "../images/DryerIcon.png"
+import dryerIcon from "../images/DryerIcon.png"
 
 
 export default function DryerAccordion() {
@@ -29,9 +29,9 @@ export default function DryerAccordion() {
             </AccordionSummary>
             <AccordionDetails>
                 <Stack spacing={2}>
-                    <DaySelection></DaySelection>
-                    <DaySelection></DaySelection>
-                    <DaySelection></DaySelection>
+                    <DaySelection iconSrc={dryerIcon} machineName="Dryer"/>
+                    <DaySelection iconSrc={dryerIcon}  machineName="Dryer"/>
+                    <DaySelection iconSrc={dryerIcon}  machineName="Dryer"/>
                 </Stack>
             </AccordionDetails>
         </Accordion>

@@ -6,6 +6,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import DaySelection from "./DaySelection"
 import AvailableButton from "./AvailableButton";
+import washerIcon from "../images/LaundryIcon.png"
 
 
 export default function WasherAccordion() {
@@ -28,9 +29,9 @@ export default function WasherAccordion() {
             </AccordionSummary>
             <AccordionDetails>
                 <Stack spacing={2}>
-                    <DaySelection></DaySelection>
-                    <DaySelection></DaySelection>
-                    <DaySelection></DaySelection>
+                    <DaySelection iconSrc={washerIcon}  machineName="Washer"/>
+                    <DaySelection iconSrc={washerIcon}  machineName="Washer"/>
+                    <DaySelection iconSrc={washerIcon} machineName="Washer" />
                 </Stack>
             </AccordionDetails>
         </Accordion>
