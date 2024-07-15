@@ -70,7 +70,6 @@ const BookingPopup = ({ open, onClose, details }) => {
                             color="brown"
                             sx={{ width: '100%' }}
                             onClick={() => {
-                                // Handle resend functionality here
                                 console.log('Resending confirmation...');
                             }}
                         >
